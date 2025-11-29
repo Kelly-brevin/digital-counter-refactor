@@ -3,9 +3,17 @@ const displayEl = document.getElementById("count");
 
 const subtractBtn = document.getElementById("subtract");
 
-document.getElementById("add").addEventListener("click", () => {});
-document.getElementById("subtract").addEventListener("click", () => {});
-document.getElementById("reset").addEventListener("click", () => {});
+const counter = new Counter(displayEl, subtractBtn);
+
+document.getElementById("add").addEventListener("click", () => {
+  counter.increment();
+});
+document.getElementById("subtract").addEventListener("click", () => {
+  counter.decrement();
+});
+document.getElementById("reset").addEventListener("click", () => {
+  counter.reset();
+});
 
 class Counter {
   constructor(displayEl, subtractBtn) {
