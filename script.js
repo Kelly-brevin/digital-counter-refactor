@@ -40,3 +40,9 @@ class Counter {
   }
 }
 const counter = new Counter(displayEl, subtractBtn);
+
+//class names are not hoisted like function declarations
+
+//Only one constructor per class
+
+//classnames use PascalCase, but the object instance created from it uses camelCase
