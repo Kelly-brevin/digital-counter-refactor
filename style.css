@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(222, 21, 249);
+  color: aliceblue;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.domElements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reset {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+}
