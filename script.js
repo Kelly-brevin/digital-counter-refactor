@@ -3,8 +3,6 @@ const displayEl = document.getElementById("count");
 
 const subtractBtn = document.getElementById("subtract");
 
-const counter = new Counter(displayEl, subtractBtn);
-
 document.getElementById("add").addEventListener("click", () => {
   counter.increment();
 });
@@ -41,3 +39,4 @@ class Counter {
     this.subtractBtn.disabled = this.count === 0;
   }
 }
+const counter = new Counter(displayEl, subtractBtn);
