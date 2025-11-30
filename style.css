@@ -28,6 +28,9 @@ body {
   border-radius: 15px;
   border: none;
 }
+#reset:hover {
+  transform: scale(1.2);
+}
 #subtract {
   font-size: 2rem;
   width: 60px;
